@@ -1,0 +1,27 @@
+<resources>
+    <string name="theme">音乐社调查意向</string>
+    <string name="name">姓名</string>
+    <string name="button">提交</string>
+    <string name="net">.club</string>
+    <string name="app_name">demo</string>
+    <string name="school">学院</string>
+    <string name="schoolHint">school</string>
+    <string name="grade">年级</string>
+    <string name="gradeOne">大一</string>
+    <string name="gradeTwo">大二</string>
+    <string name="gradeThree">大三</string>
+    <string name="gradeFour">大四</string>
+    <string name="identity">社员</string>
+    <string name="identityOne">新社员</string>
+    <string name="identityTwo">旧社员</string>
+    <string name="instrument">本学期学习意向</string>
+    <string name="instrumentOne">吉他</string>
+    <string name="instrumentTwo">贝斯</string>
+    <string name="instrumentThree">电子琴</string>
+    <string name="instrumentFour">架子鼓</string>
+    <string name="instrumentFive">萧</string>
+    <string name="instrumentSix">古筝</string>
+    <string name="instrumentSeven">二胡</string>
+    <string name="end">提交完成</string>
+    <string name="goBack">返回</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="216dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/timg" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@id/imageView"
+            android:text="@string/net" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/basicmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="@string/theme"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/name"/>
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="username  "
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/schoolView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/school" />
+            <EditText
+                android:id="@+id/inputSchool"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/schoolHint"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/identity" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identityOne"
+                    android:layout_marginLeft="30dp"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/radioTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identityTwo"
+                    android:layout_marginLeft="30dp"/>
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instrument"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <CheckBox
+                android:id="@+id/checkOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentOne" />
+            <CheckBox
+                android:id="@+id/checkTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentTwo"
+                android:layout_marginLeft="30dp" />
+            <CheckBox
+                android:id="@+id/checkThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentThree"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentFour" />
+            <CheckBox
+                android:id="@+id/checkFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentFive"
+                android:layout_marginLeft="20dp" />
+            <CheckBox
+                android:id="@+id/checkSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentSix"
+                android:layout_marginLeft="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentSeven" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button"
+                android:layout_marginLeft="90dp"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
